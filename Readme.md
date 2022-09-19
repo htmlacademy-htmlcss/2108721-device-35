@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Roman Tsarew](https://up.htmlacademy.ru/htmlcss/35/user/2108721).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 ---
 
