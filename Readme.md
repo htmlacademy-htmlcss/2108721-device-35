@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Roman Tsarew](https://up.htmlacademy.ru/htmlcss/35/user/2108721).
-* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 Получится вот так:
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038006-a4ff0afc-7bae-11e7-9786-c06aa082f7a4.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038006-a4ff0afc-7bae-11e7-9786-c06aa082f7a4.jpg">R
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
