@@ -62,7 +62,7 @@ body {
   margin: 40px auto;
   max-width: 1160px;
   box-sizing: border-box;
-  background: linear-gradient(#ffe17f 50%, #ffffff 50%);
+  background: linear-gradient(#ffe17f 43%, #ffffff 43%);
 }
 
 .main-header {
@@ -94,7 +94,7 @@ body {
 }
 
 .search-field {
-  background-image: url("../image/header/search-catalog-icon.svg");
+  background-image: url("./images/index/search-header.svg");
   background-repeat: no-repeat;
   padding: 8px 0 8px 45px;
   background-position: left 14px top 50%;
@@ -109,7 +109,7 @@ body {
 }
 
 .search-field::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-button {
@@ -143,7 +143,7 @@ body {
 .products-catalog::after {
   content: "";
   position: absolute;
-  background-image: url("../image/header/catalog-button.svg");
+  background-image: url("./images/index/catalog-plus.svg");
   background-color: transparent;
   border: none;
   top: -17px;
@@ -224,13 +224,13 @@ body {
   position: relative;
   padding: 10px;
   padding-left: 27px;
-  margin-right: 160px;
+  padding-right: 174px;
 }
 
 .enter-button::before {
   position: absolute;
   content: "";
-  background-image: url("../image/header/enter-icon.svg");
+  background-image: url("./images/index/human-icon.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
@@ -247,7 +247,7 @@ body {
 .compare-button::before {
   position: absolute;
   content: "";
-  background-image: url("../image/header/compare-icon.svg");
+  background-image: url("./images/index/compare-icon.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 12px;
@@ -264,7 +264,7 @@ body {
 .basket-button::before {
   position: absolute;
   content: "";
-  background-image: url("../image/header/basket-icon.svg");
+  background-image: url("./images/index/basket-icon.svg");
   background-repeat: no-repeat;
   width: 16px;
   height: 14px;
@@ -290,7 +290,7 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; почему то при уменьшении масштаба, переносится часть элементов. как решить? */
   justify-content: space-between;
   margin: 0;
   margin-left: 27px;
@@ -321,18 +321,29 @@ body {
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
-  top: 250px;
-  right: -25px;
+  top: 82px;
+  right: 30px;
 }
 
 .promo-offers {
+  position: relative;
   grid-column: 1/-1;
   display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.promo-slider {
+.promo-slide {
+  display: flex;
   position: relative;
-  width: 560px;
+  width: 100%;
+}
+
+/* вкл остальные слайды */
+.promo-second,
+.promo-third {
+  display: none;
 }
 
 .slider-image {
@@ -356,7 +367,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  background-image: url("../image/slider/slider-next.svg");
+  background-image: url("./images/index/slider-page.svg");
   background-repeat: no-repeat;
 }
 
@@ -435,11 +446,12 @@ body {
 .slider-pagination {
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
   gap: 20px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 77px;
+  max-width: 150px;
 }
 
 .slider-item {
@@ -459,7 +471,7 @@ body {
   cursor: pointer;
 }
 
-.slider-pagination-button-current {
+.button-current {
   background-color: #000000;
 }
 
@@ -520,15 +532,20 @@ body {
   gap: 33px;
 }
 
-.navigation-image {
-  position: relative;
+.image-container {
   width: 160px;
   height: 160px;
-  background-repeat: no-repeat;
   background-color: #ffe17f;
-  background-position: center;
-  border: none;
+  display: grid;
+  place-content: "align-content";
+  align-content: center;
+  justify-content: center;
 }
+
+.monopod {
+  align-content: flex-end;
+}
+
 
 .product-link-description {
   display: flex;
@@ -538,6 +555,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .services {
@@ -638,7 +656,7 @@ body {
 .delivery-description::after {
   position: absolute;
   content: "";
-  background-image: url("../image/services/delivery-icon.svg");
+  background-image: url("./images/index/delivery-icon.svg");
   width: 136px;
   height: 164px;
   top: 5px;
@@ -648,7 +666,7 @@ body {
 .guarantee-description::after {
   position: absolute;
   content: "";
-  background-image: url("../image/services/guarantee-icon.svg");
+  background-image: url("./images/index/guarantee-icon.svg");
   width: 136px;
   height: 164px;
   top: 5px;
@@ -658,7 +676,7 @@ body {
 .credit-description::after {
   position: absolute;
   content: "";
-  background-image: url("../image/services/credit-icon.svg");
+  background-image: url("./images/index/credit-icon.svg");
   width: 136px;
   height: 164px;
   top: 5px;
@@ -677,12 +695,12 @@ body {
   margin-bottom: 118px;
 }
 
-.modal-icon {
+.modal-icon-index {
   width: 125px;
   height: 100px;
   border: none;
   background-color: #ffe17f;
-  background-image: url("../image/rare-delivery/rare-delivery.svg");
+  background-image: url("./images/index/special-delivery-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
@@ -715,7 +733,7 @@ body {
   right: 43px;
   top: 30px;
   background-color: rgba(220, 220, 220, 0.5);
-  background-image: url("../image/rare-delivery/modal-info.svg");
+  background-image: url("./images/index/special-delivery-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -974,7 +992,7 @@ body {
   content: "";
   width: 14px;
   height: 14px;
-  background-image: url("../image/subscribe-bird.svg");
+  background-image: url("./images/index/subscribe-bird.svg");
   background-repeat: no-repeat;
   top: 7px;
   left: -16px;
@@ -999,7 +1017,7 @@ body {
 
 .footer-logo {
   display: block;
-  background-image: url("../image/footer/footer-logo.svg");
+  background-image: url("./images/index/footer-logo.svg");
   background-repeat: no-repeat;
   width: 145px;
   height: 36px;
@@ -1075,15 +1093,15 @@ body {
 }
 
 .social-item:first-child {
-  background-image: url("../image/footer/tg-icon.svg");
+  background-image: url("./images/index/tg-icon.svg");
 }
 
 .social-item:nth-child(2) {
-  background-image: url("../image/footer/youtube-icon.svg");
+  background-image: url("./images/index/youtube-icon.svg");
 }
 
 .social-item:nth-child(3) {
-  background-image: url("../image/footer/twitter-icon.svg");
+  background-image: url("./images/index/twitter-icon.svg");
 }
 
 .social-link {
@@ -1108,7 +1126,7 @@ body {
 .author-link {
   width: 115px;
   height: 33px;
-  background-image: url("../image/footer/author-logo.svg");
+  background-image: url("./images/index/author-link.svg");
   background-repeat: no-repeat;
   margin-left: auto;
 }
@@ -1143,7 +1161,7 @@ body {
   margin: 0;
   width: 26px;
   height: 26px;
-  background-image: url("../image/modal/modal-close.svg");
+  background-image: url("./images/index/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -1203,7 +1221,7 @@ body {
 
 .name-field {
   width: 360px;
-  background-image: url("../image/modal/name-icon.svg");
+  background-image: url("./images/index/modal-name-icon.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 21px;
 }
@@ -1221,7 +1239,7 @@ body {
 
 .mail-field {
   width: 360px;
-  background-image: url("../image/modal/mail-icon.svg");
+  background-image: url("./images/index/modal-mail-icon.svg");
   background-repeat: no-repeat;
   background-position: top 24px right 20px;
 }
@@ -1265,7 +1283,7 @@ body {
   width: 26px;
   height: 26px;
   background-color: #ffe17f;
-  background-image: url("../image/modal/modal-info.svg");
+  background-image: url("./images/index/modal-info.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -1287,7 +1305,7 @@ body {
 }
 
 .button-minus {
-  background-image: url("../image/modal/minus-button.svg");
+  background-image: url("./images/index/modal-minus-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1297,8 +1315,13 @@ body {
   padding: 20px 10px;
   text-align: center;
 }
+
+.count-field::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
 .button-plus {
-  background-image: url("../image/modal/plus-button.svg");
+  background-image: url("./images/index/modal-plus-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1335,4 +1358,15 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 6px;
   left: 0;
   z-index: -1;
+}
+
+/* catalog-page styles */
+.catalog-header {
+display: grid;
+grid-column: 1/-1;
+column-gap: 26px;
+padding: 0 60px;
+max-width: 1160px;
+background-color: #ffe17f;
+margin: 40px auto 35px;
 }

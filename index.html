@@ -25,7 +25,7 @@
               <label class="visually-hidden" for="search">
                 Форма поиска товара на сайте.
               </label>
-              <input class="search-field" id="search" type="search" placeholder="Текст поиска" required />
+              <input class="search-field" id="search" type="search" placeholder="Поиск по сайту" required />
               <button class="search-button">Найти</button>
             </form>
             <a class="products-catalog" href="#">Каталог товаров</a>
@@ -84,14 +84,14 @@
                 <a class="navigation-link" href="#">Контакты</a>
               </li>
             </ul>
-            <span class="header-number">01</span>
           </nav>
         </header>
-        <section class="promo-offers">
+        <ul class="promo-offers">
           <h2 class="visually-hidden">Горячие предложения!</h2>
-          <div class="promo-slider">
-            <img class="slider-image" src="./image/slider/slider-photo.png"
-              alt="фото квадрокоптера, стреляющего лазером.">
+          <li class="promo-slide promo-first">
+            <span class="header-number">01</span>
+            <img class="slider-image" src="./images/index/drone-photo.jpg"
+              alt="фото квадрокоптера, стреляющего лазером." width="560" height="560">
             <div class="slider-controls">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -100,47 +100,116 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
-          </div>
-          <div class="promo-text">
-            <strong class="second-title promo-title">
-              Порхает как бабочка, жалит как пчела!
-            </strong>
-            <p class="main-text promo-description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.
-            </p>
-            <div class="promo-details">
-              <a class="button-usual promo-more" href="#">Подробнее</a>
-              <ol class="slider-pagination">
-                <li class="slider-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
+            <div class="promo-text">
+              <strong class="second-title promo-title">
+                Порхает как бабочка, жалит как пчела!
+              </strong>
+              <p class="main-text promo-description">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.
+              </p>
+              <div class="promo-details">
+                <a class="button-usual promo-more" href="#">Подробнее</a>
+              </div>
+              <div class="promo-block">
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">800 м</dt>
+                  <dd class="main-text parameters-text">Дальность полета</dd>
+                </dl>
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">50 м</dt>
+                  <dd class="main-text parameters-text">Радиус поражения</dd>
+                </dl>
+              </div>
             </div>
-            <div class="promo-block">
-              <dl class="promo-parameters">
-                <dt class="main-text parameters-title">800 м</dt>
-                <dd class="main-text parameters-text">Дальность полета</dd>
-              </dl>
-              <dl class="promo-parameters">
-                <dt class="main-text parameters-title">50 м</dt>
-                <dd class="main-text parameters-text">Радиус поражения</dd>
-              </dl>
+          </li>
+          <li class="promo-slide promo-second">
+            <span class="header-number">02</span>
+            <img class="slider-image" src="./images/index/bracelet-photo.png" alt="фото фитнесс браслета черного цвета."
+              width="560" height="560">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
             </div>
-          </div>
-        </section>
+            <div class="promo-text">
+              <strong class="second-title promo-title">
+                Худеем правильно!
+              </strong>
+              <p class="main-text promo-description">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+              </p>
+              <div class="promo-details">
+                <a class="button-usual promo-more" href="#">Подробнее</a>
+              </div>
+              <div class="promo-block">
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">48 часов</dt>
+                  <dd class="main-text parameters-text">Без подзарядки</dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="promo-slide promo-third">
+            <span class="header-number">03</span>
+            <img class="slider-image" src="./images/index/selfistick-photo.png"
+              alt="фото селфи палки в трех положениях: со штативом, без, с октрытым штативом." width="560" height="560">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+            <div class="promo-text">
+              <strong class="second-title promo-title">
+                Делай селфи, как Бен Стиллер!
+              </strong>
+              <p class="main-text promo-description">
+                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
+                всего 5 кг.
+              </p>
+              <div class="promo-details">
+                <a class="button-usual promo-more" href="#">Подробнее</a>
+              </div>
+              <div class="promo-block">
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">8,5 м</dt>
+                  <dd class="main-text parameters-text">Длина палки</dd>
+                </dl>
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">5 кг</dt>
+                  <dd class="main-text parameters-text">Вес палки</dd>
+                </dl>
+                <dl class="promo-parameters">
+                  <dt class="main-text parameters-title">Карбон</dt>
+                  <dd class="main-text parameters-text">Материал</dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ol class="slider-pagination">
+          <li class="slider-item">
+            <button class="slider-pagination-button button-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ol>
       </div>
       <main class="main-index">
         <h1 class="visually-hidden">
@@ -150,44 +219,50 @@
           <h2 class="visually-hidden">Навигация по каталогу товаров.</h2>
           <ul class="navigation-products-list">
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/vr.svg" width="160" height="160"
-                  alt="виртуальная реальность.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container">
+                  <img src="./images/index/vr-icon.svg" width="97" height="55" alt="виртуальная реальность.">
+                </div>
                 <span class="product-link-description">Виртуальная<br> реальность</span>
               </a>
             </li>
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/monopod.svg" width="160" height="160"
-                  alt="моноподы.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container monopod">
+                  <img src=".//images/index/monopod-icon.svg" width="86" height="117" alt="моноподы.">
+                </div>
                 <span class="product-link-description">Моноподы<br> для селфи</span>
               </a>
             </li>
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/cameras.svg" width="160" height="160"
-                  alt="экшн-камеры.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container">
+                  <img src="./images/index/action-camera-icon.svg" width="71" height="87" alt="экшн-камеры.">
+                </div>
                 <span class="product-link-description">Экшн-камеры</span>
               </a>
             </li>
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/fitness-brac.svg" width="160" height="160"
-                  alt="фитнесс-браслеты.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container">
+                  <img src="./images/index/fitness-icon.svg" width="107" height="65" alt="фитнесс-браслеты.">
+                </div>
                 <span class="product-link-description">Фитнес-браслеты</span>
               </a>
             </li>
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/smart-watches.svg" width="160" height="160"
-                  alt="умные часы.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container">
+                  <img src="./images/index/watches-icon.svg" width="56" height="98" alt="умные часы.">
+                </div>
                 <span class="product-link-description">Умные часы</span>
               </a>
             </li>
             <li class="navigation-products-item">
-              <a class="navigation-products-link" href="#">
-                <img class="navigation-image" src="./image/navigation/quadrocopters.svg" width="160" height="160"
-                  alt="квадрокоптеры.">
+              <a class="navigation-products-link" href="catalog.html">
+                <div class="image-container">
+                  <img src=".//images/index/copter-icon.svg" width="132" height="69" alt="квадрокоптеры.">
+                </div>
                 <span class="product-link-description">Квадрокоптеры</span>
               </a>
             </li>
@@ -234,7 +309,7 @@
         </section>
         <section class="section-modal">
           <h2 class="visually-hidden">Окно доставки товаров.</h2>
-          <button class="modal-icon" type="button"></button>
+          <button class="modal-icon-index" type="button"></button>
           <button class="modal-button" type="button">Доставим редкий товар под заказ
           </button>
         </section>
