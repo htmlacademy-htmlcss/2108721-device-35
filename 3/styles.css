@@ -76,10 +76,12 @@ body {
 
 .header-logo {
   width: 145px;
+  height: 36px;
   margin: -67px 0;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  transition: 100ms;
 }
 
 .main-navigation {
@@ -90,17 +92,23 @@ body {
 
 .personal-menu {
   display: flex;
-  width: 1040px;
   max-height: 40px;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
   align-items: center;
 }
 
+.header-personal-line {
+  display: flex;
+  max-width: 1040px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .search-form {
   display: flex;
+  max-height: 40px;
 }
 
 .search-field {
@@ -134,15 +142,8 @@ body {
   cursor: pointer;
 }
 
-.navigation-column {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 2/3;
-  align-items: flex-start;
-}
-
 .personal-item {
+  position: relative;
   list-style-type: none;
 }
 
@@ -189,7 +190,6 @@ body {
 }
 
 .personal-basket {
-  position: relative;
   padding: 5px;
   padding-left: 51px;
 }
@@ -241,7 +241,7 @@ body {
   width: max-content;
   padding-right: 57px;
   max-width: 237px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .popup-catalog-link::after {
@@ -1200,12 +1200,12 @@ body {
   margin: 0;
   width: 26px;
   height: 26px;
-  background-image: url("./images/");
+  background-image: url("./images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
   border: none;
-  top: 84px;
+  top: 67px;
   right: 80px;
   cursor: pointer;
 }
@@ -1443,7 +1443,9 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .breadcrumbs {
@@ -1511,14 +1513,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filter-title {
-  margin-bottom: 60px;
-}
-
-.filter-divider {
-  width: 198px;
-  border: 1px solid #000000;
-  background-color: #000000;
-  margin-bottom: 12px;
+  margin-bottom: 72px;
 }
 
 .catalog-price{
@@ -1527,16 +1522,27 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   margin: 0;
   padding: 0 ;
-  margin-bottom: 68px;
+  margin-bottom: 80px;
 }
 
 .catalog-filter-title {
+  position: relative;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
   padding: 0;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+.catalog-filter-title::before {
+  position: absolute;
+  content: "";
+  width: 198px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  top: -12px;
+  left: 0;
 }
 
 .range-scale {
@@ -1618,7 +1624,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 47px;
 }
 
 .sort-title {
@@ -1938,68 +1944,155 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgba(68, 68, 76, 0.6);
 }
 
-/* поповер корзины */
-
-.basket-button::after {
-
-}
-
-.tooltip-text {
+/* поповер корзины on/off - display: flex / none*/
+.popover {
   display: none;
   position: absolute;
-  width: 216px;
+  top: 36px;
+  right: -75px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
   font-size: 16px;
+  line-height: 20px;
+  background-color: #000000;
+  min-height: 180px;
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url("./images/popover-window-triangle.svg");
+  top: -6px;
+  right: 155px;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  position: relative;
+  padding: 20px 0;
+}
+
+.cart-item:first-child {
+  padding-top: 0;
+}
+
+.cart-item:last-child {
+  padding-bottom: 0;
+}
+
+.popover-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.popover-image {
+  margin-right: 23px;
+}
+
+.cart-item-title {
+  display: flex;
+  text-align: start;
+  margin: 0;
+  max-width: 185px;
+}
+
+.cart-item-delete {
+  position: absolute;
+  content: "";
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url("./images/popover-item-delete.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+}
+
+.first-item {
+  top: 0;
+}
+
+.popover-cart-total {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 320px;
+  padding: 12px 20px;
+  background-color: #1A1A1A;
+  margin: 0;
+}
+
+.popover-close-button {
+  display: block;
+  width: 280px;
+  height: 50px;
+  padding: 14px 0;
+  margin: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
-  background-color: #333333;
-  border-radius: 10px;
-  text-transform: none;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  padding: 16px 17px 22px 23px;
-  left: -115px;
-  top: 40px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
 }
 
-.tooltip-button:hover,
-.tooltip-button:focus {
- background-color: #68A2CA;
- border: none;
+
+/* buttons-conditions */
+
+.header-logo:hover {
+  opacity: 60%;
 }
 
-.tooltip-button:active {
- opacity: 30%;
+.header-logo:focus {
+  border: 2px solid #af4fff;
 }
 
-.tooltip-button:hover::after,
-.tooltip-button:focus::after {
- content: attr(data-title);
- position: absolute;
- width: 216px;
- font-size: 16px;
- line-height: 21px;
- color: #FFFFFF;
- background-color: #333333;
- border-radius: 10px;
- text-transform: none;
- box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
- padding: 16px 17px 22px 23px;
- left: -115px;
- top: 40px;
+.header-logo:active {
+  opacity: 30%;
 }
 
-.tooltip-button:hover::after::before,
-.tooltip-button:focus::after::before {
- position: absolute;
- content: "";
- width: 19px;
- height: 9px;
- background-image: url(../images/modal/tooltip-triangle.svg);
- background-repeat: no-repeat;
- top: -9px;
- left: 46%;
+.footer-logo:hover {
+  opacity: 60%;
 }
 
-.tooltip-button:disabled{
- background-color: #F2F2F2;
- opacity: 90%;
+.footer-logo:focus {
+  border: 2px solid #af4fff;
+}
+
+.footer-logo:active {
+  opacity: 30%;
+}
+
+/* при указании бордера элемент смещается, как решить */
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
 }
