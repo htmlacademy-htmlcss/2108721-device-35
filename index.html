@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header container-align">
       <nav class="main-navigation">
         <a class="header-logo">
           <svg aria-hidden="true" focusable="false" width="145" height="37" fill="none"
@@ -24,7 +26,9 @@
             <label class="visually-hidden" for="search">
               Форма поиска товара на сайте.
             </label>
-            <input class="search-field index-search" id="search" type="search" placeholder="Текст поиска" required>
+            <div class="input-container">
+              <input class="search-field index-search" id="search" type="search" placeholder="Текст поиска" required>
+            </div>
             <button class="search-button" type="submit" value="кнопка поиска на сайте">Найти</button>
           </form>
           <ul class="personal-menu">
@@ -39,7 +43,7 @@
                 <span class="basket-count">2</span>
               </a>
               <!-- поповер корзины -->
-              <div class="popover popover-cart">
+              <div class="popover popover-cart-close">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Корзина с товарами</h2>
                   <ul class="cart-items-list">
@@ -74,7 +78,7 @@
         </div>
         <ul class="header-services">
           <li class="special-item">
-            <button class="popup-catalog-link popup-plus popup-minus" href="#">Каталог товаров</button>
+            <button class="popup-catalog-link popup-minus" type="button">Каталог товаров</button>
             <div class="subcatalog">
               <ul class="subcatalog-list first-column">
                 <li class="subcatalog-item">
@@ -116,7 +120,7 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Добро пожаловать на сайт магазина Девайс.</h1>
-      <section class="hot-offers-container">
+      <section class="hot-offers-container container-align">
         <h2 class="visually-hidden">Горячие предложения!</h2>
         <ul class="promo-offers">
           <li class="promo-slide promo-first">
@@ -150,7 +154,7 @@
               height="560">
             <div class="promo-text">
               <strong class="second-title promo-title">
-                Худеем правильно!
+                Худеем<br> правильно!
               </strong>
               <p class="main-text promo-description">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -170,14 +174,14 @@
               alt="селфи палки в трех положениях: со штативом, без, с октрытым штативом." width="560" height="560">
             <div class="promo-text">
               <strong class="second-title promo-title">
-                Делай селфи, как Бен Стиллер!
+                Делай селфи,<br> как Бен Стиллер!
               </strong>
               <p class="main-text promo-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
                 всего 5 кг.
               </p>
               <a class="button-usual promo-more" href="#">Подробнее</a>
-              <div class="promo-block">
+              <div class="promo-block promo-other-gap">
                 <dl class="promo-parameters">
                   <dt class="main-text parameters-text">Длина палки</dt>
                   <dd class="main-text parameters-title">8,5 м</dd>
@@ -220,7 +224,7 @@
           </button>
         </div>
       </section>
-      <section class="navigation-products">
+      <section class="navigation-products container-align">
         <h2 class="visually-hidden">Навигация по каталогу товаров.</h2>
         <ul class="navigation-products-list">
           <li class="navigation-products-item">
@@ -287,36 +291,36 @@
               <button class="button-usual other-point" type="button">Кредит</button>
             </li>
           </ul>
-          <div class="delivery-description description">
+          <div class="description first-description">
             <h3 class="second-title services-title">Доставка</h3>
             <p class="main-text services-text">
               Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+              совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его
               на ваш этаж.
             </p>
           </div>
-          <div class="guarantee-description description">
+          <div class="description second-description">
             <h3 class="second-title services-title">Гарантия</h3>
             <p class="main-text services-text">
-              Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
+              Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.
             </p>
           </div>
-          <div class="credit-description description">
+          <div class="description third-description">
             <h3 class="second-title services-title">Кредит</h3>
             <p class="main-text services-text">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+              Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия
               кредита. Выгодные для банка, разумеется.
             </p>
           </div>
         </div>
       </section>
-      <section class="section-modal">
+      <section class="section-modal container-align">
         <h2 class="visually-hidden">Оформление доставки товара на заказа.</h2>
         <button class="modal-button" type="button">Доставим редкий товар под заказ</button>
       </section>
-      <div class="contact-block">
+      <div class="contact-block container-align">
         <section class="about-block">
           <h3 class="second-title about-title">О нас</h3>
           <p class="main-text about-description">
@@ -401,7 +405,6 @@
           </li>
           <li>
             <a class="social-link yt-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-              </svg>
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
@@ -441,7 +444,7 @@
             </div>
             <div class="email-frame">
               <label class="delivery-modal-title" for="email">Ваш e-mail:</label>
-              <input class="field mail-field" id="email" name="email-field" placeholder="почта" required>
+              <input class="field mail-field" id="email" type="email" name="email-field" placeholder="почта" required>
               <p class="invalid-notice">Забавный у вас адрес</p>
             </div>
             <div class="comment-frame">
