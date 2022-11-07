@@ -27,12 +27,12 @@
             <label class="visually-hidden" for="search">
               Форма поиска товара на сайте.
             </label>
-            <input class="search-field catalog-search" id="search" type="search" placeholder="Текст поиска" required>
+            <input class="search-field catalog-search" id="search" type="search" placeholder="Текст поиска" name="search-catalog" required>
             <button class="search-button" type="submit" value="кнопка поиска на сайте">Найти</button>
           </form>
           <ul class="personal-menu">
             <li class="personal-item">
-              <a class="personal-link personal-enter catalog-enter" href="#">Коля Петухов</a>
+              <a class="personal-link personal-enter catalog-enter" href="#">Николай Петухов</a>
             </li>
             <li class="personal-item">
               <a class="personal-link personal-exit catalog-exit" href="#">Выйти</a>
@@ -140,12 +140,12 @@
       </section>
       <section class="catalog-block">
         <h2 class="visually-hidden">Секция фильтров товара.</h2>
-        <form class="catalog-filter">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
           <strong class="catalog-title filter-title">фильтр:</strong>
           <fieldset class="catalog-price">
             <legend class="catalog-filter-title price-title">Стоимость</legend>
             <div class="range-scale">
-              <div class="range-bar" style="left: 0; width: 119px">
+              <div class="range-bar">
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">изменить минимальную цену</span>
                 </button>
@@ -168,38 +168,38 @@
             <ul class="filter-sort-list">
               <li class="sort-check-item">
                 <label class="sort" for="black-color">
-                  <input class="visually-hidden" type="checkbox" name="black" checked id="black-color">
-                  <span class="sort-check">
+                  <input class="visually-hidden" type="checkbox" name="black" checked id="black-color" tabindex="-1">
+                  <span class="sort-check" tabindex="0">
                   </span>
                   <span class="sort-name">Черный</span>
                 </label>
               </li>
               <li class="sort-check-item">
                 <label class="sort" for="white-color">
-                  <input class="visually-hidden" type="checkbox" name="white" checked id="white-color">
-                  <span class="sort-check">
+                  <input class="visually-hidden" type="checkbox" name="white" checked id="white-color" tabindex="-1">
+                  <span class="sort-check" tabindex="0">
                   </span>
                   <span class="sort-name">Белый</span>
                 </label>
               </li>
               <li class="sort-check-item">
                 <label class="sort" for="blue-color">
-                  <input class="visually-hidden" type="checkbox" name="blue" id="blue-color">
-                  <span class="sort-check"></span>
+                  <input class="visually-hidden" type="checkbox" name="blue" id="blue-color" tabindex="-1">
+                  <span class="sort-check" tabindex="0"></span>
                   <span class="sort-name">Синий</span>
                 </label>
               </li>
               <li class="sort-check-item">
                 <label class="sort" for="red-color">
-                  <input class="visually-hidden" type="checkbox" name="red" id="red-color">
-                  <span class="sort-check"></span>
+                  <input class="visually-hidden" type="checkbox" name="red" id="red-color" tabindex="-1">
+                  <span class="sort-check" tabindex="0"></span>
                   <span class="sort-name">Красный</span>
                 </label>
               </li>
               <li class="sort-check-item">
                 <label class="sort" for="pink-color">
-                  <input class="visually-hidden" type="checkbox" name="pink" id="pink-color">
-                  <span class="sort-check"></span>
+                  <input class="visually-hidden" type="checkbox" name="pink" id="pink-color" tabindex="-1">
+                  <span class="sort-check" tabindex="0"></span>
                   <span class="sort-name">Розовый</span>
                 </label>
               </li>
@@ -211,7 +211,7 @@
               <li class="sort-radio-item">
                 <label class="radio" for="yes">
                   <input class="visually-hidden" type="radio" name="ok" value="yes" id="yes" checked>
-                  <span class="sort-radio">
+                  <span class="sort-radio" tabindex="0">
                   </span>
                   <span class="sort-name">Есть</span>
                 </label>
@@ -219,7 +219,7 @@
               <li class="sort-radio-item">
                 <label class="radio" for="no">
                   <input class="visually-hidden" type="radio" name="ok" value="no" id="no">
-                  <span class="sort-radio"></span>
+                  <span class="sort-radio" tabindex="0"></span>
                   <span class="sort-name">Нет</span>
                 </label>
               </li>
@@ -301,7 +301,7 @@
             </ul>
             <button class="load-more" type="button">Загрузить ещЁ</button>
             <div class="catalog-pagination">
-              <a class="pagination-button pagination-disabled"  tabindex="0">Назад</a>
+              <a class="pagination-button pagination-disabled" tabindex="0">Назад</a>
               <ol class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link current-link" href="#">1</a>
@@ -319,7 +319,7 @@
                   <a class="pagination-link" href="#">15</a>
                 </li>
               </ol>
-              <a class="pagination-button pagination-forward"  tabindex="0">Вперёд</a>
+              <a class="pagination-button pagination-forward" tabindex="0">Вперёд</a>
             </div>
           </div>
         </div>
