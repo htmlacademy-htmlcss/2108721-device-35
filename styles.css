@@ -349,9 +349,13 @@ body {
 .second-column {
   margin-right: 67px;
 }
-/* открыть попап каталог - display: flex */
+
 .special-item:focus-within .subcatalog {
-  display: none;
+  display: flex;
+}
+
+.special-item:focus-within .popup-catalog-link::after {
+  background-image: url("./images/catalog-minus.svg");
 }
 
 .subcatalog-item {
@@ -821,7 +825,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
-  margin-bottom: 118px;
+  margin-bottom: 68px;
 }
 
 .modal-button {
@@ -879,6 +883,7 @@ body {
   width: 1160px;
   padding-bottom: 79px;
   text-align: left;
+  padding-top: 50px;
 }
 
 .about-block {
@@ -1131,6 +1136,7 @@ body {
   gap: 27px;
   margin-right: 115px;
   height: 100%;
+  padding-bottom: 70px;
 }
 
 .footer-text {
@@ -1146,7 +1152,7 @@ body {
   background-color: #ffc700;
   width: 80px;
   height: 7px;
-  bottom: -70px;
+  bottom: 0;
   left: 0;
 }
 
@@ -1915,7 +1921,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: inherit;
   cursor: pointer;
   opacity: 20%;
-  padding: 5px;
+  padding: 10px 5px 10px;
 }
 
 .button-down {
@@ -2783,7 +2789,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 34px;
   height: 34px;
   top: -6px;
-  left: -10px;
+  left: -12px;
 }
 
 .sort-button:active {
