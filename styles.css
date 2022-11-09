@@ -184,6 +184,10 @@ body {
   margin-right: auto;
 }
 
+.personal-exit {
+  margin-right: 10px;
+}
+
 .personal-enter::before {
   position: absolute;
   content: "";
@@ -225,7 +229,7 @@ body {
   width: 16px;
   height: 14px;
   left: 27px;
-  top: 5px;
+  top: 8px;
 }
 
 .basket-count {
@@ -1139,6 +1143,10 @@ body {
   padding-bottom: 70px;
 }
 
+.footer-logo {
+  width: 150px;
+}
+
 .footer-text {
   font-size: 16px;
   line-height: 20px;
@@ -1464,6 +1472,7 @@ body {
   width: 60px;
   padding: 20px 10px;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .count-field::placeholder {
@@ -1625,7 +1634,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .catalog-filter-title {
@@ -1635,7 +1644,10 @@ input[type="number"]::-webkit-inner-spin-button {
   letter-spacing: -0.02em;
   padding: 0;
   margin-right: auto;
-  margin-bottom: 30px;
+}
+
+.price-title {
+  margin-bottom: 27px;
 }
 
 .catalog-filter-title::before {
@@ -2267,8 +2279,6 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 30%;
 }
 
-/* при указании бордера элемент смещается, как решить */
-
 .breadcrumbs-link:hover {
   opacity: 60%;
 }
@@ -2358,8 +2368,6 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 30%;
 }
 
-/* при ошибке как сделать рамку на все поле? */
-
 .sort-check:hover,
 .sort-radio:hover {
   opacity: 60%;
@@ -2402,13 +2410,11 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 10%;
 }
 
-/* как стилизовать инпут? */
-
 .field:hover {
   background-color: #dcdcdc;
 }
 
-.mail-field:focus {
+.field:focus {
   outline: 2px solid #af4fff;
 }
 
@@ -2429,10 +2435,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .mail-field:disabled {
   background-color: #f0f0f0;
   opacity: 30%;
-}
-
-.count-field {
-  -moz-appearance: textfield;
 }
 
 .count-filed:invalid::after {
