@@ -1289,7 +1289,7 @@ body {
 }
 /* to turn on/off modal window - write display: flex; or display: none */
 .modal-container-close {
-  display: flex;
+  display: none;
 }
 
 .modal-delivery {
