@@ -164,10 +164,6 @@ body {
 
 .personal-item:first-child {
   margin-right: auto;
-  width: 150px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .personal-link {
@@ -195,13 +191,13 @@ body {
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
-  left: 0;
+  left: 2px;
   top: 10px;
 }
 
 .personal-compare {
   position: relative;
-  padding: 5px;
+  padding: 5px 10px 5px;
   padding-left: 35px;
 }
 
@@ -213,11 +209,11 @@ body {
   width: 10px;
   height: 12px;
   left: 13px;
-  top: 9px;
+  top: 10px;
 }
 
 .personal-basket {
-  padding: 5px;
+  padding: 5px 0 5px;
   padding-left: 51px;
 }
 
@@ -228,8 +224,8 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 14px;
-  left: 27px;
-  top: 8px;
+  left: 23px;
+  top: 6px;
 }
 
 .basket-count {
@@ -244,8 +240,8 @@ body {
   border-radius: 50%;
   font-size: 14px;
   line-height: 17px;
-  left: 12px;
-  top: 4px;
+  left: 8px;
+  top: 5px;
 }
 
 .header-services {
@@ -255,7 +251,7 @@ body {
   padding: 0;
   list-style-type: none;
   align-items: center;
-  width: 100%;
+  width: 1040px;
 }
 
 .popup-catalog-link {
@@ -315,9 +311,13 @@ body {
   text-align: center;
 }
 
+.special-item:not(:last-child) {
+  margin-right: 44px;
+}
+
 .special-item:first-child {
   position: relative;
-  margin-right: 278px;
+  margin-right: auto;
 }
 
 .subcatalog {
@@ -325,13 +325,13 @@ body {
   flex-wrap: wrap;
   max-height: 125px;
   position: absolute;
-  padding: 33px 60px 27px;
+  padding: 0 60px 29px;
   width: 1040px;
   height: 180px;
   left: -60px;
-  top: 25px;
+  top: 57px;
   background-color: #ffe17f;
-  z-index: 1;
+  z-index: 2;
 }
 
 .subcatalog-list {
@@ -385,26 +385,16 @@ body {
   background-color: #000000;
 }
 
-.special-item:nth-child(2) {
-  margin-right: 43px;
-}
-
-.special-item:nth-child(3) {
-  margin-right: 44px;
-}
-
 .services-link {
+  display: block;
   position: relative;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
   transition: 0.3s;
-  z-index: 1;
   padding: 5px 0;
 }
 /* for active link display:block */
@@ -437,7 +427,7 @@ body {
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
-  top: 87px;
+  top: 83px;
   right: 13px;
 }
 
@@ -713,7 +703,7 @@ body {
   padding: 0;
   list-style-type: none;
   margin-top: -40px;
-  gap: 38px;
+  gap: 39px;
 }
 
 .services-list::after {
@@ -749,7 +739,7 @@ body {
 
 .current-point {
   width: 280px;
-  padding: 10px 117px 11px 0;
+  padding: 9px 117px 10px 0;
   background-color: #000000;
   color: #ffe17f;
 }
@@ -837,7 +827,7 @@ body {
   display: flex;
   background-color: #f0f0f0;
   justify-content: center;
-  min-width: 1164px;
+  min-width: 1160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -845,7 +835,7 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 41px 123px 36px 123px;
+  padding: 41px 119px 36px 123px;
   border: none;
   cursor: pointer;
 }
@@ -1128,7 +1118,6 @@ body {
   padding: 62px 0 61px;
   background-color: #444444;
   max-width: 100%;
-  flex-shrink: 0;
 }
 
 .footer-first-column {
@@ -1137,7 +1126,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   max-width: 239px;
-  gap: 27px;
+  gap: 25px;
   margin-right: 115px;
   height: 100%;
   padding-bottom: 70px;
@@ -1178,7 +1167,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: 71px;
+  margin-top: 72px;
   margin-bottom: 57px;
   width: 446px;
 }
@@ -1303,7 +1292,6 @@ body {
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   width: 920px;
   height: 568px;
-  z-index: 3;
 }
 
 .modal-close-button {
@@ -1325,10 +1313,11 @@ body {
 
 .delivery-form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   border: none;
   padding: 0;
   margin: 0;
+  width: 760px;
 }
 
 .modal-content {
@@ -1341,12 +1330,21 @@ body {
   margin-bottom: 42px;
 }
 
+.modal-first-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.modal-second-line {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name-frame {
   display: flex;
   flex-direction: column;
   width: 360px;
-  margin-right: auto;
-  margin-bottom: 62px;
 }
 
 .delivery-modal-title {
@@ -1355,7 +1353,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .field {
@@ -1412,12 +1410,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 540px;
-  margin-right: 40px;
   margin-bottom: 52px;
 }
 
 .option-title {
   line-height: 26px;
+  margin-bottom: 11px;
 }
 
 .comments-field {
@@ -1433,6 +1431,7 @@ body {
 .count-title {
   display: inline-flex;
   text-align: center;
+  margin-bottom: 12px;
 }
 
 .tooltip-button {
@@ -1492,7 +1491,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-send {
+  display: flex;
   padding: 0 29px;
+  width: 200px;
   text-align: center;
   background-color: transparent;
 }
@@ -2007,6 +2008,8 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #000000;
   letter-spacing: -0.02em;
   max-width: 250px;
+  padding: 0;
+  margin: 0;
 }
 
 .item-cost {
@@ -2077,7 +2080,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-button {
-  padding: 25px;
+  padding: 27px 23px 23px 27px;
   border: none;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2853,8 +2856,8 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 44px;
   height: 44px;
   outline: 2px solid #af4fff;
-  top: 3px;
-  left: -2px;
+  top: -2px;
+  left: -11px;
 }
 
 .pagination-link:active {

@@ -27,8 +27,10 @@
             <label class="visually-hidden" for="search">
               Форма поиска товара на сайте.
             </label>
-            <input class="search-field catalog-search" id="search" type="search" placeholder="Текст поиска"
-              name="search-catalog" required>
+            <div class="input-container">
+              <input class="search-field index-search" id="search" type="search" placeholder="Текст поиска"
+                name="search-field" required>
+            </div>
             <button class="search-button" type="submit" value="кнопка поиска на сайте">Найти</button>
           </form>
           <ul class="personal-menu">
@@ -39,10 +41,10 @@
               <a class="personal-link personal-exit catalog-exit" href="#">Выйти</a>
             </li>
             <li class="personal-item">
-              <a class="personal-item personal-compare" href="#">Сравнить</a>
+              <a class="personal-link personal-compare" href="#">Сравнить</a>
             </li>
             <li class="personal-item">
-              <a class="personal-item personal-basket" href="#">Корзина
+              <a class="personal-link personal-basket" href="#">Корзина
                 <span class="basket-count">2</span>
               </a>
               <!-- поповер корзины -->
@@ -125,15 +127,15 @@
       <section class="catalog-breadcrumbs container-align">
         <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item" tabindex="0">
+          <li class="breadcrumbs-item" tabindex="-1">
             <a class="breadcrumbs-link" href="index.html">Главная
             </a>
           </li>
-          <li class="breadcrumbs-item" tabindex="0">
+          <li class="breadcrumbs-item" tabindex="-1">
             <a class="breadcrumbs-link" href="#">Каталог товаров
             </a>
           </li>
-          <li class="breadcrumbs-item" tabindex="0">
+          <li class="breadcrumbs-item" tabindex="-1">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи
             </a>
           </li>
@@ -257,8 +259,8 @@
                   <img class="catalog-item-image" src="./images/selfiestick-amateur.jpg"
                     alt="селфи палкателескопическая, хром." width="360" height="380">
                   <div class="item-parameters">
-                    <span class="item-name">Любительская<br>
-                      селфи-палка</span>
+                    <h3 class="item-name">Любительская<br>
+                      селфи-палка</h3>
                     <span class="item-cost">500 ₽</span>
                   </div>
                   <span class="catalog-more">Подробнее</span>
@@ -269,7 +271,7 @@
                   <img class="catalog-item-image" src="./images/selfiestick-prof.jpg"
                     alt="селфи-палка, черная, с синей кнопкой." width="360" height="380">
                   <div class="item-parameters">
-                    <span class="item-name">Профессиональная<br> селфи-палка </span>
+                    <h3 class="item-name">Профессиональная<br> селфи-палка </h3>
                     <span class="item-cost">1 500 ₽</span>
                   </div>
                   <span class="catalog-more">Подробнее</span>
@@ -280,8 +282,8 @@
                   <img class="catalog-item-image" src="./images/selfiestick-divers.jpg"
                     alt="селфи палка желтая с черным, со шнурком на руку." width="360" height="380">
                   <div class="item-parameters">
-                    <span class="item-name">Непотопляемая<br>
-                      селфи-палка</span>
+                    <h3 class="item-name">Непотопляемая<br>
+                      селфи-палка</h3>
                     <span class="item-cost">2 500 ₽</span>
                   </div>
                   <span class="catalog-more">Подробнее</span>
@@ -293,7 +295,7 @@
                     alt="селфи палка в виде человеческой руки, как будто держишь человека за руку." width="360"
                     height="380">
                   <div class="item-parameters">
-                    <span class="item-name">Селфи-палка «Следуй<br> за мной»</span>
+                    <h3 class="item-name">Селфи-палка «Следуй<br> за мной»</h3>
                     <span class="item-cost">1 500 ₽</span>
                   </div>
                   <span class="catalog-more">Подробнее</span>
