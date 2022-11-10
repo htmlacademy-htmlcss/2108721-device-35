@@ -34,7 +34,7 @@
           </form>
           <ul class="personal-menu">
             <li class="personal-item">
-              <a class="personal-link personal-enter logged" href="#">Войти</a>
+              <a class="personal-link personal-enter" href="#">Войти</a>
             </li>
             <li class="personal-item">
               <a class="personal-link personal-compare" href="#">Сравнить</a>
@@ -129,9 +129,9 @@
             <img class="slider-image" src="./images/drone-photo.png" alt="белый квадрокоптер, стреляющий лазером."
               width="560" height="560">
             <div class="promo-text">
-              <strong class="second-title promo-title">
+              <h3 class="second-title promo-title">
                 Порхает как бабочка, жалит как пчела!
-              </strong>
+              </h3>
               <p class="main-text promo-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                 замаскированным под стандартную камеру.
@@ -154,9 +154,9 @@
             <img class="slider-image" src="./images/bracelet-photo.png" alt="фитнесс браслет черного цвета." width="560"
               height="560">
             <div class="promo-text">
-              <strong class="second-title promo-title">
+              <h3 class="second-title promo-title">
                 Худеем<br> правильно!
-              </strong>
+              </h3>
               <p class="main-text promo-description">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
@@ -174,9 +174,9 @@
             <img class="slider-image" src="./images/selfistick-photo.png"
               alt="селфи палки в трех положениях: со штативом, без, с октрытым штативом." width="560" height="560">
             <div class="promo-text">
-              <strong class="second-title promo-title">
+              <h3 class="second-title promo-title">
                 Делай селфи,<br> как Бен Стиллер!
-              </strong>
+              </h3>
               <p class="main-text promo-description">
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
                 всего 5 кг.
@@ -441,29 +441,33 @@
           <h2 class="second-title modal-title">Доставка под заказ</h2>
           <fieldset class="delivery-form">
             <legend class="visually-hidden">Форма заявки на доставку.</legend>
-            <div class="name-frame">
-              <label class="delivery-modal-title" for="name">Ваше имя:</label>
-              <input class="field name-field" id="name" name="name-field" placeholder="Введите имя" required>
-              <span class="visually-hidden correct-notice">Добавьте имя</span>
+            <div class="modal-first-line">
+              <div class="name-frame">
+                <label class="delivery-modal-title" for="name">Ваше имя:</label>
+                <input class="field name-field" id="name" name="name-field" placeholder="Введите имя" required>
+                <span class="visually-hidden correct-notice">Добавьте имя</span>
+              </div>
+              <div class="mail-frame">
+                <label class="delivery-modal-title" for="email">Ваш e-mail:</label>
+                <input class="field mail-field" id="email" type="email" name="email-field" placeholder="почта" required>
+                <p class="invalid-notice">Забавный у вас адрес</p>
+              </div>
             </div>
-            <div class="mail-frame">
-              <label class="delivery-modal-title" for="email">Ваш e-mail:</label>
-              <input class="field mail-field" id="email" type="email" name="email-field" placeholder="почта" required>
-              <p class="invalid-notice">Забавный у вас адрес</p>
-            </div>
-            <div class="comment-frame">
-              <label class="delivery-modal-title option-title" for="comment">Что нужно привезти:</label>
-              <input class="field comments-field" id="comment" name="comment-field" placeholder="В свободной форме"
-                required>
-            </div>
-            <div class="count-frame">
-              <label class="delivery-modal-title count-title" for="count">Количество:</label>
-              <button class="tooltip-button" type="button" data-title="Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+            <div class="modal-second-line">
+              <div class="comment-frame">
+                <label class="delivery-modal-title option-title" for="comment">Что нужно привезти:</label>
+                <input class="field comments-field" id="comment" name="comment-field" placeholder="В свободной форме"
+                  required>
+              </div>
+              <div class="count-frame">
+                <label class="delivery-modal-title count-title" for="count">Количество:</label>
+                <button class="tooltip-button" type="button" data-title="Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
               к провозу багажа." value="кнопка дополнительной информации"></button>
-              <div class="count-buttons">
-                <button class="button-modal button-minus" type="button" value="уменьшить количество"></button>
-                <input class="field count-field" type="number" id="count" name="counts" placeholder="1" required>
-                <button class="button-modal button-plus" type="button" value="увеличить количество"></button>
+                <div class="count-buttons">
+                  <button class="button-modal button-minus" type="button" value="уменьшить количество"></button>
+                  <input class="field count-field" type="number" id="count" name="counts" placeholder="1" required>
+                  <button class="button-modal button-plus" type="button" value="увеличить количество"></button>
+                </div>
               </div>
             </div>
             <button class="button-usual modal-send" type="submit">Отправить</button>
