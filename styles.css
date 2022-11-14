@@ -1274,6 +1274,7 @@ body {
   margin-left: auto;
   color: #ffc700;
   text-decoration: none;
+  height: 33px;
 }
 
 .modal-container {
@@ -1420,12 +1421,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 540px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .option-title {
   line-height: 26px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .comments-field {
@@ -1441,7 +1442,7 @@ body {
 .count-title {
   display: inline-flex;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .tooltip-button {
@@ -1594,7 +1595,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 4px;
   height: 8px;
   left: -19px;
-  top: 4px;
+  top: 7px;
 }
 
 .breadcrumbs-item:first-child::after {
@@ -2130,6 +2131,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .pagination-link {
   position: relative;
+  font-size: 16px;
+  line-height: 20px;
   padding: 5px;
   text-decoration: none;
   align-self: center;
@@ -2144,7 +2147,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   position: absolute;
   top: 36px;
-  right: -75px;
+  right: -77px;
   z-index: 1;
   box-sizing: border-box;
   width: 320px;
@@ -2170,7 +2173,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 6px;
   background-image: url("./images/popover-window-triangle.svg");
   top: -6px;
-  right: 150px;
+  right: 153px;
 }
 
 .popover-content {
@@ -2189,7 +2192,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .cart-item {
   display: flex;
   position: relative;
-  padding: 21px 0;
+  padding: 21px 0 20px;
 }
 
 .cart-item:first-child {
@@ -2212,8 +2215,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .cart-item-title {
-  display: flex;
-  text-align: start;
+  padding-bottom: 3px;
   margin: 0;
   max-width: 185px;
 }
@@ -2230,8 +2232,8 @@ input[type="number"]::-webkit-inner-spin-button {
   background-position: center;
   background-color: transparent;
   border: none;
-  top: 21px;
-  right: -2px;
+  top: 22px;
+  right: 0;
   cursor: pointer;
 }
 
@@ -2254,7 +2256,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 280px;
   height: 50px;
   box-sizing: border-box;
-  padding: 14px 0;
+  padding: 16px 0 13px 3px;
   margin: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2870,8 +2872,8 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 44px;
   height: 44px;
   outline: 2px solid #af4fff;
-  top: -2px;
-  left: -11px;
+  top: -6px;
+  left: -13px;
 }
 
 .pagination-link:active {
