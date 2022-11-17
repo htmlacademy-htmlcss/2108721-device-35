@@ -157,11 +157,13 @@
                 </button>
                 <div class="catalog-price-form min-price">
                   <label class="catalog-price-label" for="price-count-from">от</label>
-                  <input class="price-input input-from" type="number" value="0" id="price-count-from" name="min-price">
+                  <input class="price-input input-from" type="number" id="price-count-from" name="min-price"
+                    placeholder="0">
                 </div>
                 <div class="catalog-price-form max-price">
                   <label class="catalog-price-label" for="price-count-to">до</label>
-                  <input class="price-input input-to" type="number" value="5000" id="price-count-to" name="max-price">
+                  <input class="price-input input-to" type="number" id="price-count-to" name="max-price"
+                    placeholder="5000">
                 </div>
               </div>
             </div>
@@ -243,12 +245,14 @@
             </div>
             <div class="sorting-order">
               <button class="sort-button button-up" type="button">
-                <span class="visually-hidden">по возрастанию
-                </span>
+                <svg  width="12" height="10" viewBox="0 0 12 10" role="img"  aria-label="сортировка, сначала дешевые." fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sort-image" d="m6 0 5.5 10H.5" fill="rgba(0, 0, 0, 0.2)" />
+                </svg>
               </button>
               <button class="sort-button button-down" type="button">
-                <span class="visually-hidden">по убыванию
-                </span>
+                <svg class="sort-image" width="12" height="10" viewBox="0 0 12 10" role="img" aria-label="сортировка, сначала дорогие." fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sort-image" d="M6 10 .5 0h11" fill="rgba(0, 0, 0, 0.2)" />
+                </svg>
               </button>
             </div>
           </div>

@@ -135,6 +135,7 @@ body {
   width: 359px;
   font-size: 16px;
   line-height: 20px;
+  outline: none;
 }
 
 .search-field::placeholder {
@@ -153,6 +154,7 @@ body {
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
+  outline: none;
 }
 
 .personal-item {
@@ -587,6 +589,7 @@ body {
   background-color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
+  outline: none;
 }
 
 .button-current {
@@ -758,7 +761,7 @@ body {
   width: 160px;
   height: 8px;
   background-color: #ffe17f;
-  top: 15px;
+  top: 16px;
   left: 0;
   z-index: -1;
 }
@@ -957,7 +960,7 @@ body {
   width: 270px;
   height: 8px;
   background-color: #ffe17f;
-  top: 15px;
+  top: 16px;
   left: 0;
   z-index: -1;
 }
@@ -1028,7 +1031,7 @@ body {
   width: 259px;
   height: 8px;
   background-color: #ffe17f;
-  top: 14px;
+  top: 16px;
   left: 0;
   z-index: -1;
 }
@@ -1079,6 +1082,7 @@ body {
   border: none;
   border-bottom: 3px solid #c4c4c4;
   padding: 13px 0 11px 16px;
+  outline: none;
 }
 
 .subscribe-field::placeholder {
@@ -1220,6 +1224,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  outline: none;
 }
 
 .tg-link::after {
@@ -1457,6 +1462,7 @@ body {
   border: none;
   top: 3px;
   right: 33px;
+  outline: none;
 }
 
 .count-buttons {
@@ -1469,6 +1475,7 @@ body {
   height: 60px;
   border: none;
   padding: 0;
+  outline: none;
 }
 
 .button-minus {
@@ -1516,7 +1523,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 200px;
   height: 8px;
   background-color: #ffe17f;
-  top: 13px;
+  top: 15px;
   left: 0;
   z-index: -1;
 }
@@ -1698,6 +1705,7 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   padding: 0;
   transition: 0.3s;
+  outline: none;
 }
 
 .toggle-min {
@@ -1718,16 +1726,16 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .min-price {
   position: absolute;
-  width: 40px;
+  width: 70px;
   top: 15px;
-  left: -12px;
+  left: -14px;
 }
 
 .max-price {
   position: absolute;
-  width: 50px;
+  width: 70px;
   top: 15px;
-  right: -22px;
+  right: -43px;
 }
 
 .catalog-price-label {
@@ -1744,12 +1752,15 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   background-color: transparent;
   border: none;
-  max-width: 40px;
+  max-width: 50px;
   padding: 0 0 0 20px;
-  color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
   line-height: 20px;
   -moz-appearance: textfield;
+}
+
+.price-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-group {
@@ -1803,6 +1814,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 0;
   left: 1px;
   cursor: pointer;
+  outline: none;
 }
 
 .sort input[type="checkbox"]:checked + .sort-check::before {
@@ -1852,6 +1864,7 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: 0.3s;
   top: 0;
   left: 0;
+  outline: none;
 }
 
 /* как окрасить кругляк с точкой в черный? */
@@ -1903,7 +1916,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 24px 40px;
+  padding: 20px 40px;
 }
 
 .results-title {
@@ -1935,26 +1948,18 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .sorting-order {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 41px;
+  justify-content: space-between;
 }
 
 .sort-button {
+  display: flex;
   position: relative;
   border: none;
-  width: 11px;
-  height: 11px;
-  background-image: url("./images/sort-button-up.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: inherit;
   cursor: pointer;
-  opacity: 20%;
-  padding: 10px 5px 10px;
-}
-
-.button-down {
-  transform: rotate(180deg);
-  margin-left: 19px;
+  padding: 10px 0;
+  outline: none;
 }
 
 .main-catalog {
@@ -1999,7 +2004,7 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 61px;
   height: 61px;
   top: 27px;
-  right: 37px;
+  right: 27px;
 }
 
 .catalog-item-image {
@@ -2137,6 +2142,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   align-self: center;
   color: rgba(68, 68, 76, 0.3);
+  outline: none;
 }
 
 .current-link {
@@ -2435,6 +2441,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .field:focus {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .mail-field:invalid,
@@ -2474,7 +2481,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.input-container:focus {
+.input-container:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2798,23 +2805,23 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-button:hover {
-  opacity: 50%;
+.sort-button:hover .sort-image {
+  fill: rgba(0, 0, 0, 0.5);
 }
 
 .sort-button:focus::after {
   position: absolute;
   content: "";
-  outline: 2px solid #af4fff;
+  outline: 2px solid rgba(175,79,255, 1);
   outline-offset: 2px;
   width: 34px;
   height: 34px;
-  top: -6px;
-  left: -12px;
+  top: -2px;
+  left: -11px;
 }
 
-.sort-button:active {
-  opacity: 100%;
+.sort-button:active .sort-image {
+  fill: #000000;
 }
 
 .catalog-link:hover::before {
@@ -2884,7 +2891,7 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 30%;
 }
 
-.catalog-price-form:focus {
+.catalog-price-form:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2901,4 +2908,25 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: 2px solid #af4fff;
   top: -4px;
   left: -4px;
+}
+
+.phone-call:hover {
+  opacity: 30%;
+}
+
+.phone-call:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.phone-call:active {
+  opacity: 60%;
+}
+
+.phone-call:disabled {
+  opacity: 0;
+}
+
+.price-input:focus-visible {
+  outline: none;
 }
