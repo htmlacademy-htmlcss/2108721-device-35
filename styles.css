@@ -1960,6 +1960,7 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   padding: 10px 0;
   outline: none;
+  background-color: inherit;
 }
 
 .main-catalog {
